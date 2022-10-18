@@ -65,7 +65,7 @@ unsigned int base_len(unsigned int num, int base)
  * @dest: Destination for copying
  * @src: Source to copy from
  * @n: The number of bytes to copy
- * Return: The _memcpy() function returns a pointer to dest.
+ * Return: The function returns a pointer to dest.
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
