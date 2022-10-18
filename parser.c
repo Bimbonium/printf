@@ -43,7 +43,7 @@ int parser(const char *string, specifier func_list[], va_list arg_list)
 				else
 					return (-1);
 			}
-			i = i + 1; /*skip the character after % */
+			i += 1; /*skip the character after % */
 		}
 		else
 		{
