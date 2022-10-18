@@ -22,5 +22,10 @@ typedef struct specifier
 
 int _putchar (char c);
 int _printf(const char *string, ...);
+int parser(const char *string, specifier func_list[], va_list arg_list);
+int print_char(va_list list);
+int print_string(va_list list);
+int print_percent(va_list list);
+
 
 #endif /*MAIN_H*/
