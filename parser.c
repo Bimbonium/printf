@@ -21,7 +21,7 @@ int parser(const char *string, specifier func_list[], va_list arg_list)
 		if (string[i] == '%') /* temporary stop at a specifier*/
 		{
 			/*move through the struct to match the next char*/
-			for (j = 0; func_list[j].sym != NULL, j++)
+			for (j = 0; func_list[j].sym != NULL; j++)
 			{
 				if (string[i + 1] == func_list[j].sym[0])
 				{
@@ -47,7 +47,7 @@ int parser(const char *string, specifier func_list[], va_list arg_list)
 		}
 		else
 		{
-			_putchar(string[i];
+			_putchar(string[i]);
 			printed_char++;
 		}
 	}

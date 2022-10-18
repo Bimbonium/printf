@@ -10,15 +10,16 @@
 int _printf(const char *string, ...)
 {
 	int printed_char;
-	specifier func_list = {
+	specifier func_list[] = {
 		{"c", print_char},
 		{"s", print_string},
+		{"%", print_percent},
 		{NULL, NULL}
 	};
 
 	va_list arg_list; /*initialise arg list*/
 
-	if (format == NULL)
+	if (string == NULL)
 		return (-1);
 
 	va_start(arg_list, string); /*first optional parameter*/
